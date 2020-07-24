@@ -49,6 +49,6 @@ create_time = """create table if not exists time
                  week int,
                  month int,
                  year int,
-                 weekday int)"""
+                 weekday text)"""
 
-create_table_scripts = [create_songplays, create_users, create_songs, create_artists, create_time]
+create_table_scripts = [create_time, create_users, create_artists, create_songs, create_songplays]

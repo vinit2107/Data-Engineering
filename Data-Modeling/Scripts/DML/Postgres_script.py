@@ -18,10 +18,17 @@ insert_artists = """insert into artists
 
 insert_time = """insert into time 
                  (start_time, hour, day, week, month, year, weekday)
-                 values (%s, %s, %s, %s, %s)"""
+                 values (%s, %s, %s, %s, %s, %s, %s) ON CONFLICT (start_time) DO NOTHING"""
 
-insert_map = {"songplay": insert_songplay,
+insert_map = {"songplays": insert_songplay,
               "users": insert_users,
               "songs": insert_songs,
               "artists": insert_artists,
               "time": insert_time}
+
+fetch_ids = """select song_id, artists.artist_id from 
+                songs JOIN artists on songs.artist_id = artists.artist_id
+                where songs.title = %s and
+                artists.name = %s and
+                songs.duration = %s
+"""
