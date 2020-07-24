@@ -4,10 +4,18 @@ import configparser
 class PropertyUtils:
 
     def check_if_empty(self, value: str):
+        """
+        Function to check if the values have been filled in the configuration.properties
+        :param value: value of the configured property
+        """
         if value.strip() == "":
             raise ValueError
 
     def validate_config(self, config: configparser.RawConfigParser):
+        """
+        Function to validate the configured properties in configuration.properties
+        :param config: object obtained from configparser
+        """
         print("Validating if property file has been configured")
         self.check_if_empty(config.get('Database', 'database.type'))
         self.check_if_empty(config.get('Database', 'database.user'))
@@ -16,6 +24,10 @@ class PropertyUtils:
         self.check_if_empty(config.get('Database', 'database.name'))
 
     def readfile(self) -> configparser.RawConfigParser:
+        """
+        Function to read the configuration property
+        :return:
+        """
         print("Reading configuration.properties")
         try:
             config = configparser.RawConfigParser()
