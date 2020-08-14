@@ -10,3 +10,20 @@ The project aims at building a Postgres ETL pipeline using Python. It involves c
 
 2. **Data-modeling in NoSQL Database**
 This project aims at building a ETL pipeline using Python and storing the data in Cassandra hosted locally. It involves creating tables in Cassandra against which the analytical queries has to be run. 
+
+The datasets have been taken from this [repository](https://github.com/Flor91/Data-engineering-nanodegree). 
+
+## LICENSE
+MIT License
+
+Copyright (c) 2020 Vinit Deshbhratar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
