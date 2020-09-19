@@ -1,5 +1,8 @@
-![Data-Engineering](https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80)
-Image source: Unsplash
+# Data-Engineering
+
+<img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" width="1100" height="500">
+
+Image source: [Unsplash](https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80)
 
 This repository contains projects implementing data-engineering concepts like data-modeling, data-warehouse. The list below explains the projects and rationale behind the projects.
 
